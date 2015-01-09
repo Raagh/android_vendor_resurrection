@@ -141,6 +141,8 @@ PRODUCT_PACKAGES += \
     AudioFX \
     Eleven \
     CMFileManager \
+    viper4android \
+    NovaLauncher \
     LockClock \
     CMAccount \
     CMHome
@@ -205,6 +207,17 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 endif
+
+# Nova Launcher
+PRODUCT_COPY_FILES += \
+	vendor/cm/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
+ 	vendor/cm/prebuilt/common/lib/libgif.so:system/lib/libgif.so
+
+
+# V4A
+PRODUCT_COPY_FILES += \
+ 	vendor/cm/prebuilt/common/etc/viper4android/viper4android.apk:system/app/Viper4Android/viper4android.apk
+
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
