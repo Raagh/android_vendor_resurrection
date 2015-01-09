@@ -1,4 +1,4 @@
-for combo in $(curl -s https://raw.githubusercontent.com/CyanogenMod/hudson/master/cm-build-targets | sed -e 's/#.*$//' | grep cm-12.0 | awk {'print $1'})
+for combo in d800 d801 d802 d803 f320 flo grouper mako hammerhead ls980 vs980
 do
-    add_lunch_combo $combo
+    add_lunch_combo $combo-userdebug
 done
